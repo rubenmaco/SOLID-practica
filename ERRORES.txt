@@ -1,0 +1,7 @@
+Lista de errores detectados:
+
+1. En /src/com.kreitek/service/FileManager se está incumpliendo, como mínimo, el Principio de Responsabilidad Única, ya que la clase FileManager puede divirse en dos que se
+encarguen por separado de los dos métodos.
+EDIT: La clase ListFileManager la he dejado comentada porque, una vez separados los dos métodos, no he encontrado referencias a este método en todo el proyecto.
+STATUS: Sin solucionar
+
