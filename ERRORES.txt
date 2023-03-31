@@ -1,7 +1,17 @@
-Lista de errores detectados:
+Lista de cambios realiados y errores detectados:
 
-1. En /src/com.kreitek/service/FileManager se está incumpliendo, como mínimo, el Principio de Responsabilidad Única, ya que la clase FileManager puede divirse en dos que se
-encarguen por separado de los dos métodos.
-EDIT: La clase ListFileManager la he dejado comentada porque, una vez separados los dos métodos, no he encontrado referencias a este método en todo el proyecto.
-STATUS: Sin solucionar
+
+1.Actualizar el método getSize de la clase Directory.
+STATUS: Solucionado.
+
+2. En /src/com.kreitek/service/FileManager se está incumpliendo, como mínimo, el Principio de Responsabilidad Única, ya
+que la clase FileManager puede divirse en dos que se encarguen por separado de los dos métodos.
+EDIT: La clase ListFileManager, que es la que cree reestructurando el segundo método de la antigua clase FileManager,
+no es utilizada en el resto de código, pero queda lista para su posible futuro despliegue.
+STATUS: Solucionado.
+
+3. La clase Directory no cumple con el principio de Segregación de Interfaces, ya que tiene varios métodos que no
+son utilizados por esa clase los cuales lanzan una excepción.
+STATUS: Sin solucionar.
+
 
