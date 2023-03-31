@@ -12,6 +12,10 @@ STATUS: Solucionado.
 
 3. La clase Directory no cumple con el principio de Segregación de Interfaces, ya que tiene varios métodos que no
 son utilizados por esa clase los cuales lanzan una excepción.
+EDIT: No me ha dado tiempo a desarrollarlo finalmente, pero lo que creo que podría hacerse para remediarlo es suprimir
+de /src/com.kreitek/files/error/Directory todos los métodos queno son válidos para directorios,readaptar el código,
+ y crear una interfaz nueva que contenga los métodos relacionados con File, dejando como resultado dos métodos más
+  específicos.
 STATUS: Sin solucionar.
 
 
